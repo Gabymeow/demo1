@@ -1,0 +1,47 @@
+body {
+    padding: 80px 100px;
+    font-family: sans-serif;
+}
+nav {
+    display: flex;
+}
+a {
+    padding: 20px 0;
+    width: 25%;
+    background: #408309;
+    color: #fafafa;
+    text-align: center;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    background: #5bb90e;
+}
+ 
+a:focus{
+    outline: none;
+}
+
+.button{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+
+    border-radius: 40px;
+    border: 3px solid #fafafa;
+    background: linear-gradient(white, lightgray);
+    color: #585a5e;
+    font: inherit;
+}
+
+.button:focus{
+    outline: none;
+    box-shadow: 
+    0 0 0 3px #fff,
+    0 0 0 6px #2f7cc0;
+}
+
+.button:active {
+border-color: #4777a6;
+background: #4387c0;
+color: #fff;
+}
