@@ -8,7 +8,7 @@
     <body>
         <header>
             <a>
-                <img src='svg/index-logo.svg' width="368" height="200" 
+                <img src='svg/index-logo.svg' width="368" height="153" 
                 alt="Логотоп барбершопа Бородинский">
             </a>
             <nav>
@@ -21,13 +21,15 @@
                 </ul>
                 <ul>
                     <li>
-                        <button type="button">Войти</button>
+                        <a href="login.html">
+                            Вход
+                        </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Барбершоп Бородинский</h1>
+            <h1 class="visual-hidden">Барбершоп Бородинский</h1>
             <section>
                 <h2>Приемущества</h2>
                 <ul>
@@ -92,7 +94,25 @@
                 <h2>Записаться</h2>
                 <p>Укажите желаемую дату и время 
                     и мы свяжемся с вами для подтверждения брони</p>
-                <!--Тут будет форма-->
+                    <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                        <p>
+                            <label for="name">Дата</label>
+                            <input type="date" name="date" id="date">
+                        </p>
+                        <p>
+                            <label for="time">Время</label>
+                            <input type="time" name="time" id="time">
+                        </p>
+                        <p>
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" id="name" placeholder="Димон">
+                        </p>
+                        <p>
+                            <label for="phone">Телефон*:</label>
+                            <input type="number" name="phone" id="phone" placeholder="+7(442)442-42-42">
+                        </p>
+                        <button type="submit">Отправить</button>
+                    </form>
             </section>
         </main>
         <footer>
@@ -115,11 +135,31 @@
         <section>
             <h2>Личный кабинет</h2>
             <p>Введите свой логин и пароль</p>
-            <!--тут будет форма-->
+            <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                    <label for="user-login">Логин</label>
+                    <input type="text" name="login" id="user-login" placeholder="Логин">
+                </p>
+                <p>
+                    <label for="user-password">Пароль</label>
+                    <input type="text" name="password" id="user-password" placeholder="Пароль">
+                </p>
+                <p>
+                    <input type="checkbox" name="remember" id="login-password-info">
+                    <label for="login-password-info">
+                        Запомни меня
+                    </label>
+                    <a href="#">Я забыл пароль</a>
+                </p>
+                <button type="submit">Войти</button>
+            </form>
             <button type="button">Закрыть</button>
         </section>
         <section>
             <h2>Как до нас добраться</h2>
+            <p>
+                <img src="img/map.png" width="780" height="560" alt="Офис компании по адресу г. санкт-петербург, б. конюшенная, д. 19/8">
+            </p>
             <button type="button">Закрыть</button>
         </section>
     </body>

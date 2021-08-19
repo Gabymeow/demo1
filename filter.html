@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>filter</title>
+        <link rel="stylesheet" href="style/filter.css">
+    </head>
+    <body>
+        <h1>Каталог</h1>
+        <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="Baxter of California" checked
+                        id="filter-baxter-of-california">
+                        <label for="filter-baxter-of-california">
+                            Baxter of California
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Mr Natty"
+                        id="filter-mr-natty">
+                        <label for="ilter-mr-natty">
+                            Mr Natty
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Suavecio" checked
+                        id="filter-suavecio">
+                        <label for="filter-suavecio">
+                            Suavecio
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Группы товаров:</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="product-group" value="shaving"
+                        id="filter-shaving">
+                        <label for="filter-shaving">
+                            Бритвенные принадлежности
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="product-group" value="hair-care"
+                        id="filter-care" checked>
+                        <label for="filter-care">
+                            Средства для ухода
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="product-group"  value="accessories"
+                        id="filter-accessories">
+                        <label for="filter-accessories">
+                            Аксессуары
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <button type="submit">Показать</button>
+        </form>
+    </body>
+</html>
