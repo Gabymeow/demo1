@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Прайс</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/style.css">
+
+    </head>
+    <body>
+        <header>
+            <a class="main-header-logo" href="index.html">
+                <img src='img/logo_nav.png' width="111" height="24ßå" 
+                alt="Логотоп барбершопа Бородинский">
+            </a>
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li><a href="index.html">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="price.html">Прайс</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="user-navigation">
+                    <li>
+                        <a href="login.html">
+                            Вход
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="price-main">
+            <section class="price-header">
+                <h1>Прайс лист</h1>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="price.html">Прайс лист</a></li>
+                </ul>
+                <h2 class="big-slogan">Истенно мужская классика</h2>
+            </section>
+            <section class="price-brands">
+                <h2>Мы используем только лучшие средства:</h2>
+                <ul class="brands-list">
+                    <li class="brands-item">brand1</li>
+                    <li class="brands-item">brand2</li>
+                    <li class="brands-item">brand3</li>
+                    <li class="brands-item">brand4</li>
+                </ul>
+            </section>
+            <section class="price-service">
+                <h2>Цены на услуги наших масетров:</h2>
+                <table class="price-table">
+                    <tr>
+                      <td class="col">Стрижка</td>
+                      <td class="col">1500</td>
+                    </tr>
+                    <tr>
+                        <td class="col">Стрижка бороды</td>
+                        <td class="col">500</td>
+                      </tr>
+                    <tr>
+                        <td class="col">Накрутка услов</td>
+                        <td class="col">350</td>
+                    </tr>
+                  </table>
+            </section>
+            <section class="price-about">
+                <h2>Несколько слов о нас:</h2>
+                <div class="price-about-left">
+                    <p>наша парикмахерская занимается исключительно мужскими стрижками. 
+                        Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. 
+                        Мы не работаем на количество, мы делаем качество.</p>
+                </div>
+                <div class="price-about-right">
+                    <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. 
+                        Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <p class="footer-contacts">барбершоп «бородинский» <br>
+                адрес: г. санкт-петербург, б. конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br>
+                телефон: +7 (495) 666-02-66
+            </p>
+            <div class="footer-social">
+                <p>Давайте дружить</p>
+                <ul>
+                    <li><a class="social-button" href="#">ВКонтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Разработано: </b> <a class="button" href="#">Gabymeow</a>
+            </p>
+        </footer>
+        <section class="modal modal-login">
+            <h2>Личный кабинет</h2>
+            <p>Введите свой логин и пароль</p>
+            <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                    <label class="visual-hidden" for="user-login">Логин</label>
+                    <input class="login-icon-user" type="text" name="login" id="user-login" placeholder="Логин">
+                </p>
+                <p>
+                    <label class="visual-hidden" for="user-password">Пароль</label>
+                    <input class="login-icon-password" type="password" name="password" id="user-password" placeholder="Пароль">
+                </p>
+                <p class="login-password-info">
+                    <label class="login-checkbox">
+                        <input  type="checkbox" name="remember" id="login-password-info">
+                        <span class="checkbox-identicator"></span>
+                        Запомни меня
+                    </lable>
+                    <a class="restore" href="#">Я забыл пароль</a>
+                </p>
+                <button class="button" type="submit">Войти</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
+        <section class="modal modal-map">
+            <h2 class="visual-hidden">Как до нас добраться</h2>
+            <p>
+                <img src="img/map.png" width="780" height="560" alt="Офис компании по адресу г. санкт-петербург, б. конюшенная, д. 19/8">
+            </p>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
+    </body>
+</html>
